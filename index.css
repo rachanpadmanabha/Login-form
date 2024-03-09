@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.title {
+  margin: 0;
+  color: rgb(72, 205, 161);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+body {
+  margin: 0;
+}
+
+.full-screen-container {
+  background-image: url("cropped-3584-2240-649533.png");
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: hsla(3, 97%, 50%, 0.245);
+  box-shadow: 0 0 15px 0;
+  padding: 40px 30px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grp-input {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.grp-input label {
+  color: rgba(0, 8, 255, 0.814);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.grp-input input {
+  font-size: 1.35rem;
+  border-radius: 5px;
+  background-color: rgba(255, 157, 0, 0.411);
+  outline: none;
+  border: none;
+  padding: 2px;
+}
+
+.grp-input input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 157, 0);
+}
+
+.submit-button {
+  background-color: rgba(0, 255, 255, 0.396);
+  padding: 10px;
+  border: none;
+}
+.submit-button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 255, 255);
+}
+
+.grp-input.error input {
+  box-shadow: 0 0 1px 2px rgb(255, 68, 0);
+}
+.grp-input.success input {
+  box-shadow: 0 0 1px 2px rgb(17, 255, 0);
+}
+
+.grp-input .msg {
+  display: none;
+  font-size: 0.75rem;
+}
+
+.grp-input.success .msg,
+.grp-input.error .msg {
+  display: block;
+}
+
+.grp-input.success .msg {
+  color: rgb(123, 255, 0);
+}
+.grp-input.error .msg {
+  color: rgb(229, 24, 24);
+}
